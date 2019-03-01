@@ -1,0 +1,101 @@
+.main {
+    width: 33%;
+    margin: auto;
+    display: block;
+}
+
+.modal_window {
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -300px;
+    display: none;
+    opacity: 0;
+    z-index: 5;
+    padding: 20px 10px;
+}
+
+#overlay {
+    z-index: 3;
+    position: fixed;
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.open_modal {
+    height: 30px;
+    width: 150px;
+    background-color: lightgray;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: table-cell;
+    padding-top: 5px;
+}
+
+.container {
+    height: 450px;
+    overflow: auto;
+    border: 1px solid black;
+}
+
+.selected {
+    background-color: dodgerblue;
+}
+
+.buttons {
+    width: 205px;
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+.close_modal {
+    width: 100px;
+    height: 40px;
+}
+
+.delete {
+    width: 24px;
+    display: none;
+}
+
+.row-table {
+    margin-top: 10px;
+    display: table-row;
+    width: 100%;
+}
+
+.choice {
+    width: 300px;
+    display: table-cell;
+}
+
+.modal_table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+.modal_table tr th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.modal_table thead {
+    background-color: darkgrey;
+}
+
+.form tr th {
+    padding: 5px 10px;
+    text-align: left;
+}

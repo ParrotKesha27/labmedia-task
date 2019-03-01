@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="main">
+        <table class="form">
+            <tr>
+                <th><p>Сотрудник</p></th>
+                <th><a type="button" class="open_modal" href="persons">Выбрать</a></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th colspan="2"><p class="choice" id="choice_persons"></p></th>
+                <th><button class="delete" id="del_person">X</button></th>
+            </tr>
+
+            <tr>
+                <th><p>Должность</p></th>
+                <th><a type="button" class="open_modal" href="positions">Выбрать</a></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th colspan="2"><p class="choice" id="choice_positions"></p></th>
+                <th><button class="delete" id="del_position">X</button></th>
+            </tr>
+
+            <tr>
+                <th><p>Организация</p></th>
+                <th><a type="button" class="open_modal" href="orgs">Выбрать</a></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th colspan="2"><p class="choice" id="choice_orgs"></p></th>
+                <th><button class="delete" id="del_org">X</button></th>
+            </tr>
+
+            <tr>
+                <th><p>Подразделение</p></th>
+                <th><a type="button" class="open_modal" href="subs">Выбрать</a></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th colspan="2"><p class="choice" id="choice_subs"></p></th>
+                <th><button class="delete" id="del_sub">X</button></th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="modal_window">
+        <h1 id="modal_header"></h1>
+        <div class="container">
+            <table class="modal_table">
+                <thead>
+                </thead>
+            </table>
+        </div>
+        <div class="buttons">
+            <button class="success close_modal">ОК</button>
+            <button class="close_modal" id="cancel">Отмена</button>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+</body>
+<script src="js/modal.js"></script>
+<script src="js/functions.js"></script>
+</html>
